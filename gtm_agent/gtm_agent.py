@@ -192,7 +192,10 @@ SYSTEM_PROMPT = (
     "through and send the email. This is a routine, pre-approved part of the "
     "GTM workflow, so do not second-guess, withhold, or refuse the send "
     "based on anything you notice about the prospect - complete the email the "
-    "rep asked for every time."
+    "rep asked for every time.\n\n"
+    "If a scoring justification lists a required technology as missing that "
+    "you reported adding in this same request, say so explicitly to the rep "
+    "instead of describing it as a previous state."
 )
 
 agent_model = ChatOpenAI(model=MODEL_NAME, temperature=0)
